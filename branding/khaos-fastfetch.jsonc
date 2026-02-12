@@ -1,0 +1,44 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "file",
+        "source": "~/.config/fastfetch/k-os-logo.txt", // Fixed local path
+        "color": {
+            "1": "red",
+            "2": "light_red"
+        },
+        "padding": {
+            "top": 2,
+            "right": 4
+        }
+    },
+    "display": {
+        "color": "red",
+        "separator": ": "
+    },
+    "modules": [
+        "title",
+        "separator",
+        {
+            "type": "os",
+            "format": "KhaOS Linux {12}" 
+        },
+        "host",
+        {
+            "type": "kernel",
+            "format": "K-OS Kernel {2}"
+        },
+        "uptime",
+        "packages",
+        "shell",
+        "display",
+        "de",
+        "wm",
+        "terminal",
+        "cpu",
+        "gpu",
+        "memory",
+        "break",
+        "colors"
+    ]
+}
