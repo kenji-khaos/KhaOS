@@ -1,3 +1,9 @@
+How to install
+run this command
+
+git clone https://github.com/kenji-khaos/KhaOS.git && cd KhaOS && chmod +x khaos-setup.sh && ./khaos-setup.sh
+
+
 Core Features
 
     Arch Base, CachyOS Muscle: Built on Arch Linux but powered by the CachyOS kernel for maximum performance.
