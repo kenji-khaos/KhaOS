@@ -1,6 +1,6 @@
 How To Install
 
-    run this command
+    Run this command
 
     git clone https://github.com/kenji-khaos/KhaOS.git && cd KhaOS && chmod +x khaos-setup.sh && ./khaos-setup.sh
         
