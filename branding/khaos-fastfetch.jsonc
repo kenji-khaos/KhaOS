@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/dev/doc/json_schema.json",
     "logo": {
         "type": "file",
-        "source": "placeholder",
+        "source": "~/Documents/KhaOS/branding/k-os-logo.txt",
         "color": {
             "1": "31", 
             "2": "37"
