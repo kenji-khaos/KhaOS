@@ -50,9 +50,12 @@ echo "Customizing terminal and Fastfetch..."
 
 mkdir -p ~/.config/fastfetch
 
-# Updated: Use Symbolic Links so you only have one version of the file to edit
+# Inject the dynamic absolute path into the JSONC config so Fastfetch can find the logo
+# This makes the script portable regardless of where the repo is cloned
+sed -i "s|\"source\": \".*\"|\"source\": \"$BRANDING_DIR/k-os-logo.txt\"|" "$BRANDING_DIR/khaos-fastfetch.jsonc"
+
+# Link the config to the standard directory
 ln -sf "$BRANDING_DIR/khaos-fastfetch.jsonc" ~/.config/fastfetch/config.jsonc
-# Note: We don't need to copy k-os-logo.txt because your jsonc uses 'find' to find it!
 
 # --- 4. Bootloader Branding (Limine) ---
 echo "Searching for Limine configuration files..."
@@ -72,4 +75,5 @@ Name=KhaOS Greeting" > ~/.config/autostart/khaos-greeting.desktop
 
 echo "---------------------------------------------------"
 echo "Success! KhaOS is fully deployed from $SCRIPT_DIR."
+echo "Fastfetch is now linked and configured with your custom logo."
 echo "Reboot to see everything in action."

@@ -1,11 +1,11 @@
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-"logo": {
+    "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/dev/doc/json_schema.json",
+    "logo": {
         "type": "file",
-        "source": "$(find ~ -path '*/KhaOS/branding/k-os-logo.txt' -print -quit)",
+        "source": "placeholder",
         "color": {
-            "1": "31", // Matches the red OS theme, but if terminal overrites it should work
-            "2": "37"  // White/Light Grey for contrast
+            "1": "31", 
+            "2": "37"
         },
         "padding": {
             "top": 2,
